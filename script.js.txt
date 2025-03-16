@@ -1,0 +1,5 @@
+// Ejemplo de un script simple para mostrar un mensaje al enviar el formulario
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+});
