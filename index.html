@@ -3,49 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CHEK - Soluciones Digitales de Automatización</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .feature, .use-case {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a CHEk soluciones digitales</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">CHEK es una empresa especializada en la automatización de procesos empresariales, diseñada para ayudar a otras empresas a optimizar sus operaciones, reducir costos y aumentar su eficiencia. Utilizamos herramientas líderes en el mercado como Ragic, Make (anteriormente Integromat) y Zapier para crear soluciones personalizadas que se adaptan a las necesidades específicas de cada negocio.</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>CHEK</h1>
+        <p>Soluciones Digitales de Automatización para tu Negocio</p>
     </header>
-
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Esta es la sección de inicio de mi página web.</p>
-    </section>
-
-    <section id="acerca">
-        <h2>Acerca de</h2>
-        <p>Aquí puedes escribir información sobre ti o tu negocio.</p>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de este formulario:</p>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
+    <nav>
+        <a href="#features">Características</a>
+        <a href="#use-cases">Casos de Uso</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="features">
+            <h2>Características Principales</h2>
+            <div class="feature">
+                <h3>1. Bases de Datos Personalizadas</h3>
+                <p>Crea bases de datos en la nube adaptadas a las necesidades de tu negocio, sin necesidad de programación.</p>
+            </div>
+            <div class="feature">
+                <h3>2. Automatización de Procesos</h3>
+                <p>Conecta tus herramientas y automatiza tareas repetitivas para ahorrar tiempo y reducir errores.</p>
+            </div>
+            <div class="feature">
+                <h3>3. Reportes en Tiempo Real</h3>
+                <p>Genera informes automáticos y actualizados para una mejor toma de decisiones.</p>
+            </div>
+            <div class="feature">
+                <h3>4. Integración con Otras Herramientas</h3>
+                <p>Conecta CHEK con aplicaciones como Gmail, Slack, Google Sheets y más.</p>
+            </div>
+            <div class="feature">
+                <h3>5. Soporte y Capacitación</h3>
+                <p>Ofrecemos capacitación y soporte técnico para que aproveches al máximo nuestras soluciones.</p>
+            </div>
+        </section>
+        <section id="use-cases">
+            <h2>Casos de Uso</h2>
+            <div class="use-case">
+                <h3>Para Tiendas Minoristas</h3>
+                <p>Gestiona inventarios, controla ventas y genera reportes automáticos.</p>
+            </div>
+            <div class="use-case">
+                <h3>Para Despachos Contables</h3>
+                <p>Automatiza facturación, cálculos de impuestos y generación de reportes fiscales.</p>
+            </div>
+            <div class="use-case">
+                <h3>Para el Sector Público</h3>
+                <p>Digitaliza trámites, gestiona recursos y mejora la atención al ciudadano.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Nosotros</h2>
+            <p>En <strong>CHEK</strong>, nos especializamos en ofrecer soluciones digitales de automatización para micro, medianas empresas, emprendedores y el sector público. Nuestro enfoque es brindar herramientas personalizadas, fáciles de usar y escalables que optimicen tus procesos.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Listo para optimizar tus procesos? Contáctanos:</p>
+            <p>Email: <a href="mailto:info@chek.com">info@chek.com</a></p>
+            <p>Teléfono: +52 55 1234 5678</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2023 Mi Página Web</p>
+        <p>&copy; 2023 CHEK. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
