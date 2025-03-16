@@ -6,11 +6,10 @@
     <title>CHEK - Soluciones Digitales de Automatización</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
             color: #333;
         }
         header {
@@ -18,43 +17,58 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header img {
-            width: 150px;
+            width: 120px;
             margin-bottom: 10px;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em;
             color: #13a861; /* Color secundario */
         }
         nav {
-            background: #032047; /* Color principal */
-            color: #fff;
+            background: #fff;
             padding: 10px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #fff;
+            color: #032047; /* Color principal */
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1em;
         }
         nav a:hover {
             color: #13a861; /* Color secundario al hacer hover */
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h2 {
             color: #032047; /* Color principal */
-        }
-        .feature, .use-case {
+            border-bottom: 2px solid #13a861; /* Color secundario */
+            padding-bottom: 10px;
             margin-bottom: 20px;
+        }
+        .feature, .use-case, .video-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .feature h3, .use-case h3, .video-item h3 {
+            color: #032047; /* Color principal */
+            margin-top: 0;
         }
         .video-container {
             text-align: center;
@@ -62,18 +76,29 @@
         }
         iframe {
             max-width: 100%;
-            height: auto;
+            height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .video-description {
+            margin-top: 15px;
+            font-size: 1em;
+            color: #555;
+            text-align: left;
         }
         footer {
             background: #032047; /* Color principal */
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 20px 0;
+            margin-top: 40px;
         }
         footer a {
             color: #13a861; /* Color secundario */
             text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -133,15 +158,89 @@
             <p>En <strong>CHEK</strong>, nos especializamos en ofrecer soluciones digitales de automatización para micro, medianas empresas, emprendedores y el sector público. Nuestro enfoque es brindar herramientas personalizadas, fáciles de usar y escalables que optimicen tus procesos.</p>
         </section>
         <section id="video">
-            <h2>Descubre CHEK en Acción</h2>
-            <div class="video-container">
-                <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/IQRQXnnNh3cWTZX0kJEn5EgmAXq5fbiZZlC-QCvK6TabDcg" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <h2>Módulos de CHEK en Acción</h2>
+            <!-- Módulo Inventario -->
+            <div class="video-item">
+                <h3>🎥 Módulo Inventario: Control Total y en Tiempo Real 📦📊</h3>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EZodzVdJUF5GpSwDxjOUswABCpCPTHG6caIZIAem2awH6Q?e=EBA859" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p>Gestiona tu inventario de manera eficiente con todas las funcionalidades que necesitas:</p>
+                    <ul>
+                        <li>✅ Registra y actualiza productos en tiempo real.</li>
+                        <li>✅ Controla el stock mínimo y máximo para evitar faltantes o excesos.</li>
+                        <li>✅ Genera alertas automáticas para reposición de productos.</li>
+                        <li>✅ Integra el inventario con otros módulos como ventas y compras.</li>
+                        <li>✅ Exporta reportes en Excel para análisis detallados.</li>
+                    </ul>
+                    <p>¡Mantén el control de tu inventario y optimiza tu negocio! 🚀</p>
+                    <p>Si tienes preguntas, ¡contáctanos! 😊</p>
+                </div>
+            </div>
+            <!-- Módulo Catálogo -->
+            <div class="video-item">
+                <h3>🎥 Módulo Catálogo de Productos y Servicios 🌐📱</h3>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/Ed0mnv8BPIJGtsmbIsAZ88EBBhO9vneKK9pAqEzZTn5rEw?e=ogKfnq" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p>Conecta con tus clientes de manera profesional y ofrece una experiencia única con nuestro catálogo digital:</p>
+                    <ul>
+                        <li>✅ Personaliza tu catálogo de productos y servicios.</li>
+                        <li>✅ Muestra el stock de tus productos en tiempo real.</li>
+                        <li>✅ Comparte enlaces o códigos QR interactivos.</li>
+                        <li>✅ Visualiza fotos y videos de tus productos.</li>
+                        <li>✅ Envíalo fácilmente por WhatsApp y otros canales.</li>
+                    </ul>
+                    <p>Diseñado para mejorar la experiencia de tus clientes y potenciar tus ventas. 🚀</p>
+                    <p>¡Contáctanos para más información!</p>
+                </div>
+            </div>
+            <!-- Módulo Proformas -->
+            <div class="video-item">
+                <h3>🎥 Módulo Proforma: Rápido, Simple y Eficiente 🌐📄</h3>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/IQRQXnnNh3cWTZX0kJEn5EgmAXq5fbiZZlC-QCvK6TabDcg" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p>Registra proformas en menos de 3 minutos y aprovecha todas sus funcionalidades:</p>
+                    <ul>
+                        <li>✅ Crea o busca clientes fácilmente.</li>
+                        <li>✅ Selecciona productos directamente desde el módulo Inventario.</li>
+                        <li>✅ Genera documentos en formato PDF listos para compartir.</li>
+                        <li>✅ Incluye un oficio con su adjunto para mayor formalidad.</li>
+                    </ul>
+                    <p>¡Todo lo que necesitas para agilizar tus procesos en un solo lugar! 🚀</p>
+                    <p>Si tienes preguntas, ¡contáctanos! 😊</p>
+                </div>
+            </div>
+            <!-- Módulo Ventas -->
+            <div class="video-item">
+                <h3>🎥 Módulo de Ventas: Completo, Ágil y Personalizable 🛒💼</h3>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EVtkdi5pq31EhSabwVbeVCsBnrTQ-if7ED4El3fZixvukw?e=fh3vC3" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p>Registra y gestiona tus ventas de manera eficiente con todas sus funcionalidades:</p>
+                    <ul>
+                        <li>✅ Clientes al instante: Busca clientes por cédula o teléfono, o regístralos directamente.</li>
+                        <li>✅ Selección de productos: Agrega productos desde el inventario visualmente, por código o con el buscador inteligente.</li>
+                        <li>✅ Precios adaptables: Configura distintos tipos de precios según el cliente.</li>
+                        <li>✅ Gestión de facturación y pagos: Registra estados de factura, saldos, pagos y adjunta comprobantes.</li>
+                        <li>✅ Control total: Visualiza tus ventas con indicadores de estado en colores personalizables.</li>
+                        <li>✅ Automatización eficiente: Genera recibos en PDF y envíalos por WhatsApp.</li>
+                        <li>✅ Análisis y reportes: Exporta ventas en Excel, consulta estadísticas de productos, clientes y vendedores, y recibe reportes automáticos de ventas diarias.</li>
+                    </ul>
+                    <p>¡Optimiza tu proceso de ventas y lleva tu negocio al siguiente nivel! 🚀📊</p>
+                    <p>Si tienes preguntas, ¡contáctanos! 😊</p>
+                </div>
             </div>
         </section>
         <section id="contact">
             <h2>Contacto</h2>
             <p>¿Listo para optimizar tus procesos? Contáctanos:</p>
-            <p>Email: <a href="mailto:info@chek.com">info@chek.com</a></p>
+            <p>Email: <a href="mailto:administracion@chek.it.com">administracion@chek.it.com</a></p>
             <p>Teléfono: <a href="tel:+593983406237">098 340 6237</a></p>
         </section>
     </div>
