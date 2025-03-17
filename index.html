@@ -90,11 +90,23 @@
             flex: 1;
             max-width: 500px; /* Tamaño fijo para los vídeos */
         }
-        iframe {
+        iframe, video {
             width: 100%;
             height: 280px; /* Altura fija para los vídeos */
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .fullscreen-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .fullscreen-btn:hover {
+            background-color: #0056b3;
         }
         footer {
             background: #032047; /* Color principal */
@@ -189,6 +201,7 @@
                 </div>
                 <div class="video-container">
                     <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EZodzVdJUF5GpSwDxjOUswABCpCPTHG6caIZIAem2awH6Q?e=EBA859" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <button class="fullscreen-btn" onclick="toggleFullscreen('inventarioVideo')">Pantalla Completa</button>
                 </div>
             </div>
             <!-- Módulo Catálogo -->
@@ -208,6 +221,7 @@
                 </div>
                 <div class="video-container">
                     <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/Ed0mnv8BPIJGtsmbIsAZ88EBBhO9vneKK9pAqEzZTn5rEw?e=ogKfnq" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <button class="fullscreen-btn" onclick="toggleFullscreen('catalogoVideo')">Pantalla Completa</button>
                 </div>
             </div>
             <!-- Módulo Proformas -->
@@ -225,7 +239,11 @@
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
                 <div class="video-container">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7286885263253909505" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <video id="proformaVideo" controls>
+                        <source src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EcZH0P8LSLhIsQBKkMpmlwABOS3qJ9ksRDQ-s-SxO6UpMA?e=ne8oaQ" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <button class="fullscreen-btn" onclick="toggleFullscreen('proformaVideo')">Pantalla Completa</button>
                 </div>
             </div>
             <!-- Módulo Ventas -->
@@ -247,6 +265,7 @@
                 </div>
                 <div class="video-container">
                     <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EVtkdi5pq31EhSabwVbeVCsBnrTQ-if7ED4El3fZixvukw?e=fh3vC3" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <button class="fullscreen-btn" onclick="toggleFullscreen('ventasVideo')">Pantalla Completa</button>
                 </div>
             </div>
         </section>
@@ -259,7 +278,22 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2023 CHEK. Todos los derechos reservados.</p>
+        <p>&copy; 2025 CHEK. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        // Función para alternar pantalla completa
+        function toggleFullscreen(elementId) {
+            const element = document.getElementById(elementId);
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) { // Firefox
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) { // Chrome, Safari y Opera
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) { // IE/Edge
+                element.msRequestFullscreen();
+            }
+        }
+    </script>
 </body>
 </html>
