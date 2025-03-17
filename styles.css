@@ -72,3 +72,10 @@ form button {
 form button:hover {
     background-color: #555;
 }
+
+/* Mejora para controlar el iframe */
+iframe {
+    resize: none; /* Evita el redimensionamiento */
+    border: none; /* Elimina el borde (si lo deseas) */
+    overflow: hidden; /* Oculta las barras de desplazamiento (si es necesario) */
+}
