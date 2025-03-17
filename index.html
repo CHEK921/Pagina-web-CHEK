@@ -15,18 +15,23 @@
         header {
             background: #032047; /* Color principal */
             color: #fff;
-            padding: 20px 0;
+            padding: 40px 0; /* Más espacio en el encabezado */
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header img {
-            width: 120px;
-            margin-bottom: 10px;
+            width: 180px; /* Tamaño del logo */
+            margin-bottom: 15px;
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 3.5em; /* Texto más grande */
             color: #13a861; /* Color secundario */
+        }
+        header p {
+            font-size: 1.5em; /* Texto más grande */
+            margin: 10px 0 0;
+            font-weight: bold;
         }
         nav {
             background: #fff;
@@ -54,10 +59,12 @@
             border-radius: 8px;
         }
         h2 {
-            color: #032047; /* Color principal */
-            border-bottom: 2px solid #13a861; /* Color secundario */
-            padding-bottom: 10px;
+            color: #fff; /* Texto blanco */
+            background-color: #13a861; /* Fondo verde */
+            padding: 15px;
+            border-radius: 8px;
             margin-bottom: 20px;
+            text-align: center;
         }
         .feature, .use-case, .video-item {
             margin-bottom: 20px;
@@ -70,21 +77,28 @@
             color: #032047; /* Color principal */
             margin-top: 0;
         }
-        .video-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        iframe {
-            max-width: 100%;
-            height: 450px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .video-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; /* Espacio entre la descripción y el vídeo */
         }
         .video-description {
-            margin-top: 15px;
+            flex: 1;
             font-size: 1em;
             color: #555;
-            text-align: left;
+        }
+        .video-description ul {
+            padding-left: 20px;
+        }
+        .video-container {
+            flex: 1;
+            max-width: 500px; /* Tamaño fijo para los vídeos */
+        }
+        iframe {
+            width: 100%;
+            height: 280px; /* Altura fija para los vídeos */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         footer {
             background: #032047; /* Color principal */
@@ -104,7 +118,7 @@
 </head>
 <body>
     <header>
-        <img src="logo-chek.png" alt="Logo de CHEK">
+        <img src="https://1drv.ms/i/c/614c3d3b7eb2f1bc/Eeyj8DoM76lBvpet6x8d2ioBKWFurHZo1k-rnssWZiL2uA?e=mVY7uc" alt="Logo de CHEK">
         <h1>CHEK</h1>
         <p>Soluciones Digitales de Automatización para tu Negocio</p>
     </header>
@@ -115,6 +129,7 @@
         <a href="#contact">Contacto</a>
     </nav>
     <div class="container">
+        <!-- Características Principales -->
         <section id="features">
             <h2>Características Principales</h2>
             <div class="feature">
@@ -138,6 +153,7 @@
                 <p>Ofrecemos capacitación y soporte técnico para que aproveches al máximo nuestras soluciones.</p>
             </div>
         </section>
+        <!-- Casos de Uso -->
         <section id="use-cases">
             <h2>Casos de Uso</h2>
             <div class="use-case">
@@ -153,19 +169,18 @@
                 <p>Digitaliza trámites, gestiona recursos y mejora la atención al ciudadano.</p>
             </div>
         </section>
+        <!-- Nosotros -->
         <section id="about">
             <h2>Nosotros</h2>
             <p>En <strong>CHEK</strong>, nos especializamos en ofrecer soluciones digitales de automatización para micro, medianas empresas, emprendedores y el sector público. Nuestro enfoque es brindar herramientas personalizadas, fáciles de usar y escalables que optimicen tus procesos.</p>
         </section>
+        <!-- Módulos de CHEK en Acción -->
         <section id="video">
             <h2>Módulos de CHEK en Acción</h2>
             <!-- Módulo Inventario -->
             <div class="video-item">
-                <h3>🎥 Módulo Inventario: Control Total y en Tiempo Real 📦📊</h3>
-                <div class="video-container">
-                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EZodzVdJUF5GpSwDxjOUswABCpCPTHG6caIZIAem2awH6Q?e=EBA859" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                </div>
                 <div class="video-description">
+                    <h3>🎥 Módulo Inventario: Control Total y en Tiempo Real 📦📊</h3>
                     <p>Gestiona tu inventario de manera eficiente con todas las funcionalidades que necesitas:</p>
                     <ul>
                         <li>✅ Registra y actualiza productos en tiempo real.</li>
@@ -177,14 +192,14 @@
                     <p>¡Mantén el control de tu inventario y optimiza tu negocio! 🚀</p>
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EZodzVdJUF5GpSwDxjOUswABCpCPTHG6caIZIAem2awH6Q?e=EBA859" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
             </div>
             <!-- Módulo Catálogo -->
             <div class="video-item">
-                <h3>🎥 Módulo Catálogo de Productos y Servicios 🌐📱</h3>
-                <div class="video-container">
-                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/Ed0mnv8BPIJGtsmbIsAZ88EBBhO9vneKK9pAqEzZTn5rEw?e=ogKfnq" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                </div>
                 <div class="video-description">
+                    <h3>🎥 Módulo Catálogo de Productos y Servicios 🌐📱</h3>
                     <p>Conecta con tus clientes de manera profesional y ofrece una experiencia única con nuestro catálogo digital:</p>
                     <ul>
                         <li>✅ Personaliza tu catálogo de productos y servicios.</li>
@@ -196,14 +211,14 @@
                     <p>Diseñado para mejorar la experiencia de tus clientes y potenciar tus ventas. 🚀</p>
                     <p>¡Contáctanos para más información!</p>
                 </div>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/Ed0mnv8BPIJGtsmbIsAZ88EBBhO9vneKK9pAqEzZTn5rEw?e=ogKfnq" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
             </div>
             <!-- Módulo Proformas -->
             <div class="video-item">
-                <h3>🎥 Módulo Proforma: Rápido, Simple y Eficiente 🌐📄</h3>
-                <div class="video-container">
-                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/IQRQXnnNh3cWTZX0kJEn5EgmAXq5fbiZZlC-QCvK6TabDcg" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                </div>
                 <div class="video-description">
+                    <h3>🎥 Módulo Proforma: Rápido, Simple y Eficiente 🌐📄</h3>
                     <p>Registra proformas en menos de 3 minutos y aprovecha todas sus funcionalidades:</p>
                     <ul>
                         <li>✅ Crea o busca clientes fácilmente.</li>
@@ -214,14 +229,14 @@
                     <p>¡Todo lo que necesitas para agilizar tus procesos en un solo lugar! 🚀</p>
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/IQRQXnnNh3cWTZX0kJEn5EgmAXq5fbiZZlC-QCvK6TabDcg" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
             </div>
             <!-- Módulo Ventas -->
             <div class="video-item">
-                <h3>🎥 Módulo de Ventas: Completo, Ágil y Personalizable 🛒💼</h3>
-                <div class="video-container">
-                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EVtkdi5pq31EhSabwVbeVCsBnrTQ-if7ED4El3fZixvukw?e=fh3vC3" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                </div>
                 <div class="video-description">
+                    <h3>🎥 Módulo de Ventas: Completo, Ágil y Personalizable 🛒💼</h3>
                     <p>Registra y gestiona tus ventas de manera eficiente con todas sus funcionalidades:</p>
                     <ul>
                         <li>✅ Clientes al instante: Busca clientes por cédula o teléfono, o regístralos directamente.</li>
@@ -235,8 +250,12 @@
                     <p>¡Optimiza tu proceso de ventas y lleva tu negocio al siguiente nivel! 🚀📊</p>
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
+                <div class="video-container">
+                    <iframe src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EVtkdi5pq31EhSabwVbeVCsBnrTQ-if7ED4El3fZixvukw?e=fh3vC3" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
+        <!-- Contacto -->
         <section id="contact">
             <h2>Contacto</h2>
             <p>¿Listo para optimizar tus procesos? Contáctanos:</p>
