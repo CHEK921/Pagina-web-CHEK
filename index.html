@@ -98,18 +98,6 @@
             resize: none; /* Evita que el iframe cambie de tamaño */
             pointer-events: auto; /* Permite interacciones con el iframe */
         }
-        .fullscreen-btn {
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .fullscreen-btn:hover {
-            background-color: #0056b3;
-        }
         footer {
             background: #032047; /* Color principal */
             color: #fff;
@@ -202,8 +190,7 @@
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
                 <div class="video-container">
-                    <iframe id="inventarioVideo" src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EZodzVdJUF5GpSwDxjOUswABCpCPTHG6caIZIAem2awH6Q?e=EBA859" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen style="resize: none;"></iframe>
-                    <button class="fullscreen-btn" onclick="toggleFullscreen('inventarioVideo')">Pantalla Completa</button>
+                    <iframe id="inventarioVideo" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7284332263394164736?compact=1" height="280" width="500" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
                 </div>
             </div>
             <!-- Módulo Catálogo -->
@@ -222,8 +209,7 @@
                     <p>¡Contáctanos para más información!</p>
                 </div>
                 <div class="video-container">
-                    <iframe id="catalogoVideo" src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/Ed0mnv8BPIJGtsmbIsAZ88EBBhO9vneKK9pAqEzZTn5rEw?e=ogKfnq" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen style="resize: none;"></iframe>
-                    <button class="fullscreen-btn" onclick="toggleFullscreen('catalogoVideo')">Pantalla Completa</button>
+                    <iframe id="catalogoVideo" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7286834871312740352?compact=1" height="280" width="500" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
                 </div>
             </div>
             <!-- Módulo Proformas -->
@@ -241,8 +227,7 @@
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
                 <div class="video-container">
-                    <iframe id="proformaVideo" src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EcZH0P8LSLhIsQBKkMpmlwABOS3qJ9ksRDQ-s-SxO6UpMA?e=ne8oaQ" width="500" height="280" frameborder="0" scrolling="no" allowfullscreen style="resize: none;"></iframe>
-                    <button class="fullscreen-btn" onclick="toggleFullscreen('proformaVideo')">Pantalla Completa</button>
+                    <iframe id="proformaVideo" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7286885160820637696?compact=1" height="280" width="500" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
                 </div>
             </div>
             <!-- Módulo Ventas -->
@@ -263,8 +248,7 @@
                     <p>Si tienes preguntas, ¡contáctanos! 😊</p>
                 </div>
                 <div class="video-container">
-                    <iframe id="ventasVideo" src="https://1drv.ms/v/c/614c3d3b7eb2f1bc/EVtkdi5pq31EhSabwVbeVCsBnrTQ-if7ED4El3fZixvukw?e=fh3vC3" width="500" height="280" frameborder="0" scrolling="si" allowfullscreen style="resize: none;"></iframe>
-                    <button class="fullscreen-btn" onclick="toggleFullscreen('ventasVideo')">Pantalla Completa</button>
+                    <iframe id="ventasVideo" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7294551789083738112?compact=1" height="280" width="500" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
                 </div>
             </div>
         </section>
@@ -279,20 +263,5 @@
     <footer>
         <p>&copy; 2022 CHEK. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        // Función para alternar pantalla completa
-        function toggleFullscreen(elementId) {
-            const element = document.getElementById(elementId);
-            if (element.requestFullscreen) {
-                element.requestFullscreen();
-            } else if (element.mozRequestFullScreen) { // Firefox
-                element.mozRequestFullScreen();
-            } else if (element.webkitRequestFullscreen) { // Chrome, Safari y Opera
-                element.webkitRequestFullscreen();
-            } else if (element.msRequestFullscreen) { // IE/Edge
-                element.msRequestFullscreen();
-            }
-        }
-    </script>
 </body>
 </html>
